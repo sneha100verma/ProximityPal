@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tutorialCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_centerHorizontal="true"
+    android:elevation="8dp"
+     android:backgroundTint="@android:color/transparent"
+    android:layout_margin="16dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:background="@drawable/grad"
+android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_highlight_off_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/closeButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-16dp"
+            android:text="How to Use the App"
+
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Search for your desired location.\n\n2. Select and save the location.\n\n3. Set the alarm.\n\n4. The alarm will ring when you are near the saved location.\n\n5. Enjoy the app!"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
